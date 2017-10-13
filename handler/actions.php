@@ -110,7 +110,7 @@
         // posted from someone else, showing on 'my' profile
         $postingTo = '';
 
-        if ($post ['post_to'] != 0) {
+        if ($post['post_to'] != 0) {
 
           $userToInfo = mysqli_query($connection, "SELECT * FROM members WHERE id='".$post['post_to']."'");
           $rsuserToInfo = mysqli_fetch_array($userToInfo);
@@ -167,7 +167,7 @@
                       </tr>
                       <tr>
                         <td colspan="3" align="left">
-                          <div class="commentsContainer" id="allComments_'.$post['id'].'">
+                          <div id="allComments_'.$post['id'].'">
                             <img height="50px" width="50px" style="border-radius: 50%;" src="images/giphy.gif" class="hidden" id="commentsLoading_'.$post['id'].'"/>
                           </div>
                         </td>

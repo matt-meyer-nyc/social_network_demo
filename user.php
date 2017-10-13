@@ -394,7 +394,7 @@
          $('#commentsLoading_'+postid).hide();
          $('#viewComment_'+postid).hide();
 
-         $('.commentsContainer').css('background-color', 'seashell');
+        //  $('.commentsContainer').css('background-color', 'seashell');
 
        });
 
